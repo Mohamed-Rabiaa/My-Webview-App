@@ -2,7 +2,6 @@ package com.development.mywebviewapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,7 +10,6 @@ import android.view.KeyEvent;
 import android.webkit.WebBackForwardList;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
