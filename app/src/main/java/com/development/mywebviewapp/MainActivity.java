@@ -76,25 +76,4 @@ public class MainActivity extends AppCompatActivity {
 
         outState.putString("URL",url);
     }
-
-    /*  public class MyWebViewCLient extends WebViewClient
-    {
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view,String url)
-        {
-            if("www.google.com".equals(Uri.parse(url)
-               .getHost()))
-            {
-                return false;
-            }
-            else
-            {
-               Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse(url));
-
-               startActivity(intent);
-
-                return true;
-            }
-        }
-    }*/
 }
