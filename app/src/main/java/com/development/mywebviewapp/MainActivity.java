@@ -2,23 +2,16 @@ package com.development.mywebviewapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.KeyEvent;
-import android.webkit.WebBackForwardList;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
     WebView myWebView;
 
     WebViewClient mywebViewClient;
-
-    WebBackForwardList myWebBackForwardList;
 
     int progress = 0;
 
@@ -34,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(savedInstanceState != null)
         {
-            myWebView.loadUrl((String)savedInstanceState.getString("URL"));
+            myWebView.loadUrl(savedInstanceState.getString("URL"));
 
         }
 
